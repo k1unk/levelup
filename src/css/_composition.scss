@@ -1,0 +1,81 @@
+.composition-block {
+  //background-color: #f3e7e7;
+  background: linear-gradient(65deg, #efe3e3, rgb(141, 115, 139));
+  * {
+    //border: 1px solid #cdffcd;
+  }
+
+  .wrapper {
+    padding: 30px 20px;
+    max-width: 1440px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+
+    .ingredients {
+
+      .ingredient {
+        width: 150px;
+        background-color: #cac8ec;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        border-radius: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .photo {
+          margin: 20px 0;
+
+          img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+          }
+        }
+
+        .title {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .product-photo-and-order {
+      margin: 0 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .empty {
+
+      }
+
+      .photo {
+        img {
+          height: 350px;
+          width: auto;
+
+        }
+      }
+
+      .order__button {
+        background-color: #cac8ec;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 30px;
+        text-align: center;
+        color: black;
+        font-size: 30px;
+
+        &:hover {
+          background-color: #9b98cc;
+        }
+      }
+    }
+  }
+
+}

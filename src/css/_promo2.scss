@@ -1,0 +1,63 @@
+.promo-2-block {
+  * {
+    //border: 1px solid #cdffcd;
+  }
+
+  background: linear-gradient(65deg, #efe3e3, rgb(141, 115, 139));
+
+  .wrapper {
+    padding: 30px 20px;
+    max-width: 1440px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .photo-and-about {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+
+      img {
+        width: 300px;
+        height: auto;
+        margin-right: 50px;
+      }
+
+      .about {
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 20px;
+      }
+    }
+
+    .features {
+      display: flex;
+      font-size: 27px;
+      align-items: center;
+
+      .feature {
+        margin-right: 30px;
+      }
+
+      .order__button {
+        background-color: #cac8ec;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 30px;
+        text-align: center;
+        color: black;
+        font-size: 30px;
+
+        &:hover {
+          background-color: #9b98cc;
+        }
+      }
+    }
+  }
+}

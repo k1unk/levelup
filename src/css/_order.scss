@@ -1,0 +1,127 @@
+
+.order-block {
+  background: linear-gradient(65deg, #e3efe5, rgb(115, 132, 141));
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      font-size: 60px;
+      font-family: Bahnschrift, serif;
+    }
+
+    .timer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 60px;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .photo-and-prices {
+        margin-right: 30px;
+
+        img {
+          height: 270px;
+          width: auto;
+          margin-bottom: 20px;
+        }
+
+        .prices {
+
+          .old {
+            font-size: 16px;
+            text-decoration: line-through;
+            text-align: center;
+          }
+
+          .new {
+            font-size: 20px;
+            text-align: center;
+            animation-duration: 3s;
+            animation-name: newPrice;
+            animation-iteration-count: infinite;
+          }
+
+          @keyframes newPrice {
+            0% {
+              font-size: 120%;
+            }
+
+            50% {
+              font-size: 130%;
+            }
+
+            100% {
+              font-size: 120%;
+            }
+          }
+        }
+
+      }
+
+      .form {
+        background-color: rgba(224, 185, 224, 0.3);
+        border-radius: 10px;
+        height: 350px;
+        width: 300px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        label {
+          margin-bottom: 10px;
+          font-size: 18px;
+        }
+
+        .name {
+          margin-bottom: 30px;
+          padding: 10px;
+
+          &::-webkit-input-placeholder { text-align:right}
+          &:-moz-placeholder { text-align:right; }
+
+        }
+
+        .phone {
+          margin-bottom: 30px;
+          padding: 10px;
+          &::-webkit-input-placeholder { text-align:right; }
+          &:-moz-placeholder { text-align:right; }
+
+
+        }
+
+        .buy__button {
+          background-color: #cac8ec;
+          border-radius: 5px;
+          cursor: pointer;
+          padding: 10px 30px;
+          margin-top: 20px;
+          text-align: center;
+          color: black;
+          font-size: 30px;
+
+          &:hover {
+            background-color: #9b98cc;
+          }
+        }
+      }
+    }
+
+
+  }
+
+}
